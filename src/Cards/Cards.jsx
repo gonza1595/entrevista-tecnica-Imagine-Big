@@ -23,16 +23,30 @@ export default function Cards({ nameSearch, productos, setNameSearch }) {
       className="bg-secondary bg-gradient container mh-100"
       // style={{ height: "100vh" }}
     >
+      <div className="container pt-5 pb-3">
+        <div className="row">
+          <div className="col-md-12">
+            <div className="input-group mb-3">
+              <input
+                type="text"
+                className="form-control input-text"
+                placeholder="Search products...."
+                onChange={(event) => handleSearch(event)}
+              />
+              <div className="input-group-append">
+                <button
+                  className="btn btn-primary btn-lg"
+                  type="button"
+                  onClick={() => handleSubmit()}
+                >
+                  <i className="bi bi-search"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="row">
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            placeholder="Search by name or id"
-            value={nameSearch}
-            onChange={handleSearch}
-          />
-          <button type="submit">Search</button>
-        </form>
         {filteredProducts.length > 0 ? (
           <>
             {filteredProducts.map((product) => (
