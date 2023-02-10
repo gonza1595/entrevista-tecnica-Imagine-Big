@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import Card from "../Card/Card";
 
 export default function Cards({ nameSearch, productos, setNameSearch }) {
-  const [search, setSearch] = useState("");
-
   const handleSearch = (event) => {
     setNameSearch(event.target.value);
   };
