@@ -114,7 +114,7 @@ export default function Home() {
   const [nameSearch, setNameSearch] = useState("");
 
   return (
-    <div className="bg-secondary mh-100">
+    <div className="bg-secondary h-100">
       <Cards
         nameSearch={nameSearch}
         productos={productos}
