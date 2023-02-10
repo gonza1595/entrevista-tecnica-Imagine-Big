@@ -67,8 +67,8 @@ export default function Cards({ nameSearch, productos, setNameSearch }) {
                   </div>
                 ))}
               </div>
-              <hr className="hr hr-blurry p-1 " />
-              <div className="text-center">
+              <hr className=" hr hr-blurry p-1 " />
+              <div className="fw-bold text-center">
                 {filteredProducts.length > 1
                   ? `${filteredProducts.length} productos encontrados`
                   : `${filteredProducts.length} producto encontrado`}
