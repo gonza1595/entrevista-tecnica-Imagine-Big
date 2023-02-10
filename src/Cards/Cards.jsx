@@ -27,7 +27,7 @@ export default function Cards({ nameSearch, productos, setNameSearch }) {
 
   return (
     <div className="bg-secondary bg-gradient container pt-5 ">
-      <div className="container pt-5 pb-3">
+      <div className="container pt-5 pb-1">
         <div className="row">
           <div className="col-md-12">
             <div className="input-group mb-3">
@@ -75,7 +75,9 @@ export default function Cards({ nameSearch, productos, setNameSearch }) {
               </div>
             </>
           ) : (
-            <div className="text-center">No se encontraron productos</div>
+            <div className="text-center fw-bold noProduct">
+              No se encontraron productos
+            </div>
           )}
         </div>
       </div>
