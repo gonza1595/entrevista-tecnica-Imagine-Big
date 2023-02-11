@@ -4,7 +4,7 @@ export default function Card({ img, name, id, price }) {
   return (
     <div
       className="card mb-4 border border-white text-center "
-      style={{ width: "100%", height: "480px" }}
+      style={{ width: "100%", height: "100%" }}
     >
       <div className="row g-0">
         <div className="col-xs-4">
