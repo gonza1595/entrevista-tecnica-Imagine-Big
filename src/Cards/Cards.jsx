@@ -57,7 +57,7 @@ export default function Cards({ nameSearch, productos, setNameSearch }) {
             <>
               <div className="row ">
                 {filteredProducts.map((product) => (
-                  <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-3.5 col-sm-12 col-xs-12 p-5">
+                  <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-5">
                     <Card
                       img={product.img}
                       name={product.name}
