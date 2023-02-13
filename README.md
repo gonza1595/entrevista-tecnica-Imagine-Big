@@ -139,3 +139,4 @@ export const productos = [
   }
 ];
 ```
+DEPLOY LINK: https://entrevista-tecnica-imagine-big.vercel.app/
